@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "sdn-assignment4-quiz-app-frontend-ffbn-r53a2tiih.vercel.app",
+      "https://sdn-assignment4-quiz-app-frontend-f.vercel.app",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
