@@ -12,8 +12,11 @@ app.use(express.json());
 // Allow frontend (different port) to call this API
 app.use(
   cors({
-    origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    origin: [
+      "http://localhost:3000",
+      "sdn-assignment4-quiz-app-frontend-ffbn-r53a2tiih.vercel.app",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
